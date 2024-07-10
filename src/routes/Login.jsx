@@ -10,7 +10,7 @@ import {useSelector} from "react-redux";
 import {jwtDecode} from "jwt-decode";
 import {Navigate} from "react-router";
 import {login} from "@/common/redux/action/AuthAction.jsx";
-import {LoginApi} from "@/common/components/login/LoginApi.js";
+import {LoginApi} from "@/common/components/v1/login/LoginApi.js";
 
 const { VITE_DEFAULT_PATH } = import.meta.env;
 

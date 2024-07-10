@@ -1,4 +1,4 @@
-const HeaderComponent = ({titles, buttons}) => {
+const HeaderComponent = ({titles, buttons, onSearchClick}) => {
     return (
         <article className="subTitWrap">
             <p className="subStep">
@@ -12,7 +12,7 @@ const HeaderComponent = ({titles, buttons}) => {
                 <div className="btnWrap">
                     {buttons.map((button, idx) => {
                         return (
-                            <button.component key={idx} onClick={button.onClick}>
+                            <button.component key={idx} onClick={onSearchClick}>
                                 {button.label}
                             </button.component>
                         );

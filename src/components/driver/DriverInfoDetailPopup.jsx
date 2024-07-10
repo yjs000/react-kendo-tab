@@ -4,12 +4,12 @@ import {loadCode, useYnComboData} from "@/common/utils/CodeUtil.jsx";
 import {ComboApi} from "@/components/ComboApi.js";
 import {isObjectEmpty, RegExpTypes} from "@/common/utils/Validation.jsx";
 import message from "@/common/message.js";
-import PopupInput from "@/common/components/popup/PopupInput.jsx";
-import PopupDropDown from "@/common/components/popup/PopupDropDown.jsx";
-import PopupDetailButtons from "@/common/components/popup/PopupDetailButtons.jsx";
-import PopupDatePicker from "@/common/components/popup/PopupDatePicker.jsx";
-import PopupCellPhoneInput from "@/common/components/popup/PopupCellphoneInput.jsx";
-import PopupUpload from "@/common/components/popup/PopupUpload.jsx";
+import PopupInput from "@/common/components/v1/popup/PopupInput.jsx";
+import PopupDropDown from "@/common/components/v1/popup/PopupDropDown.jsx";
+import PopupDetailButtons from "@/common/components/v1/popup/PopupDetailButtons.jsx";
+import PopupDatePicker from "@/common/components/v1/popup/PopupDatePicker.jsx";
+import PopupCellPhoneInput from "@/common/components/v1/popup/PopupCellphoneInput.jsx";
+import PopupUpload from "@/common/components/v1/popup/PopupUpload.jsx";
 import dayjs from "dayjs";
 import { Link } from "react-router-dom";
 

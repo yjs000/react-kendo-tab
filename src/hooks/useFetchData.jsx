@@ -1,11 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useMutation } from 'react-query';
-import api from '@/common/queries/Api';
+import callApi from "@/components/CommonApi.js";
 
-const fetchData = async (url, params) => {
-    const response = await api.post(params, url);
-    return response.data;
-};
 
 const useFetchData = (url, params, options = {}) => {
     const [data, setData] = useState(null);
@@ -13,7 +9,7 @@ const useFetchData = (url, params, options = {}) => {
     const [error, setError] = useState(null);
 
     const mutation = useMutation(
-        async () => fetchData(url, params),
+        async () => callApi(url, params),
         {
             onSuccess: (data) => {
                 setData(data);
@@ -29,7 +25,7 @@ const useFetchData = (url, params, options = {}) => {
 
     useEffect(() => {
         mutation.mutate();
-    }, [url, params]);
+    }, []);
 
     return { data, isLoading, error };
 };

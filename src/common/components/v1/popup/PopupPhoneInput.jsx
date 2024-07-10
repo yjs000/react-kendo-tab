@@ -1,17 +1,11 @@
-import CustomEmailBox from "@/common/components/kendo/CustomEmailBox.jsx";
 import PropTypes from "prop-types";
 import { Fragment, useState } from "react";
-import message from "@/components/common/message.js";
+import CustomPhoneNumberBox from "@/common/components/v1/kendo/CustomPhoneNumberBox.jsx";
+
 import { StrNumSizeValidatedInput } from "@/common/utils/Validation.jsx";
+import message from "@/common/message.js";
 
-/**
- * 팝업용 이메일 입력 컴포넌트<br />
- *
- * @author dhwon
- * @since 2024-05-14<br />
- */
-
-const PopupEmailInput = ({parentProps, name, label, maxByte, ...props}) => {
+const PopupPhoneInput = ({parentProps, name, label, maxByte, ...props}) => {
     const [value, setValue] = useState("");
 
     const {defaultValue, disabled, id} = props;
@@ -26,16 +20,16 @@ const PopupEmailInput = ({parentProps, name, label, maxByte, ...props}) => {
         }
     };
 
-    const decoS = !!props.required === false ? "" : "decoS";
     const placeholder = !!props.disabled === true && parentProps.mode == "I" ? message.disabledPlaceholderForInsert : null ;
+    const decoS = !!props.required === false ? "" : "decoS";
 
     return (
         <Fragment>
             {label ? <span className={`iptTit ${decoS}`}>{label}</span> : null}
-            <CustomEmailBox
+            <CustomPhoneNumberBox
                 name={name}
                 onChangeFunc={onChange}
-                inputEmailValue={defaultValue ?? parentProps.popupValue[fieldName] ?? value}
+                inputPhoneNumber={defaultValue ?? parentProps.popupValue[fieldName] ?? value}
                 placeholder={placeholder}
                 disabled={disabled}
             />
@@ -43,8 +37,8 @@ const PopupEmailInput = ({parentProps, name, label, maxByte, ...props}) => {
     );
 };
 
-export default PopupEmailInput;
+export default PopupPhoneInput;
 
-PopupEmailInput.propTypes = {
+PopupPhoneInput.propTypes = {
     parentProps : PropTypes.object.isRequired
 }

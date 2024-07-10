@@ -9,7 +9,7 @@ import {
     ChartLegend, ChartSeriesItemTooltip, ChartTooltip, ChartValueAxis, ChartValueAxisItem,
 } from "@progress/kendo-react-charts";
 import { getRandomColor } from "@/common/utils/CommonUtil.jsx";
-import ChartDropDownList from "@/common/components/kendo/kendoChart/ChartDropDownList.jsx";
+import ChartDropDownList from "@/common/components/v1/kendo/kendoChart/ChartDropDownList.jsx";
 
 /**
  * 바 차트
@@ -91,7 +91,7 @@ const BarChart = ({
         <div className="gridItem">
             <div className="contTop">
                 <h2 className="contTit">{title || ''}</h2>
-                {popupYn && <a href="src/common/components/kendo/kendoChart#" className="txtLink">전체보기</a>}
+                {popupYn && <a href="src/common/components/v1/kendo/kendoChart#" className="txtLink">전체보기</a>}
             </div>
 
             <div className="cont">

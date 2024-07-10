@@ -4,11 +4,11 @@ import {AuthApi} from "@/components/auth/AuthApi.js";
 import {ComboApi} from "@/components/ComboApi.js";
 import {isObjectEmpty} from "@/common/utils/Validation.jsx";
 import message from "@/common/message.js";
-import PopupInput from "@/common/components/popup/PopupInput.jsx";
-import PopupPhoneInput from "@/common/components/popup/PopupPhoneInput.jsx";
-import PopupCellphoneInput from "@/common/components/popup/PopupCellphoneInput.jsx";
-import PopupDropDown from "@/common/components/popup/PopupDropDown.jsx";
-import PopupDetailButtons from "@/common/components/popup/PopupDetailButtons.jsx";
+import PopupInput from "@/common/components/v1/popup/PopupInput.jsx";
+import PopupPhoneInput from "@/common/components/v1/popup/PopupPhoneInput.jsx";
+import PopupCellphoneInput from "@/common/components/v1/popup/PopupCellphoneInput.jsx";
+import PopupDropDown from "@/common/components/v1/popup/PopupDropDown.jsx";
+import PopupDetailButtons from "@/common/components/v1/popup/PopupDetailButtons.jsx";
 import {Link} from "react-router-dom";
 
 

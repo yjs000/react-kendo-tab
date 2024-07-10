@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
-import CustomDropDownList from "@/common/components/kendo/CustomDropDownList.jsx";
+import CustomDropDownList from "@/common/components/v1/kendo/CustomDropDownList.jsx";
 
 import PropTypes from "prop-types";
 import message from "@/common/message.js";

@@ -2,12 +2,12 @@ import {useLocation} from "react-router-dom";
 import {Fragment, useEffect, useState} from "react";
 
 import {timeComboData} from "@/common/utils/CodeUtil.jsx";
-import GridData from "@/common/components/grid/GridData.jsx";
-import SearchFieldDatePickerRange from "@/common/components/searchField/SearchFieldDatePickerRange.jsx";
-import SearchFieldComboBox from "@/common/components/searchField/SearchFieldComboBox.jsx";
-import SearchFieldSearchBtn from "@/common/components/searchField/SearchFieldSearchBtn.jsx";
+import GridData from "@/common/components/v1/grid/GridData.jsx";
+import SearchFieldDatePickerRange from "@/common/components/v1/searchField/SearchFieldDatePickerRange.jsx";
+import SearchFieldComboBox from "@/common/components/v1/searchField/SearchFieldComboBox.jsx";
+import SearchFieldSearchBtn from "@/common/components/v1/searchField/SearchFieldSearchBtn.jsx";
 import DemandAnalysisUserStatus from "@/components/demand/demandAnalysis/DemandAnalysisUserStatus.jsx";
-import BarChart from "@/common/components/kendo/kendoChart/BarChart.jsx";
+import BarChart from "@/common/components/v1/kendo/kendoChart/BarChart.jsx";
 import DemandAnalysisMultiChartView from "@/components/demand/demandAnalysis/DemandAnalysisMultiChartView.jsx";
 import {DemandAnalysisApi} from "@/components/demand/demandAnalysis/DemandAnalysisApi.js";
 

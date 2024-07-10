@@ -1,4 +1,4 @@
-import CustomCellPhoneNumberBox from "@/common/components/kendo/CustomCellPhoneNumberBox.jsx";
+import CustomCellPhoneNumberBox from "@/common/components/v1/kendo/CustomCellPhoneNumberBox.jsx";
 import PropTypes from "prop-types";
 import { Fragment, useState } from "react";
 import { StrNumSizeValidatedInput } from "@/common/utils/Validation.jsx";

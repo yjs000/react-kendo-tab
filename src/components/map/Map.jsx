@@ -1,7 +1,7 @@
 import {Fragment, useEffect, useRef, useState} from "react";
 import {CustomOverlayMap, MapMarker, Polyline} from "react-kakao-maps-sdk";
 import {RouteEditApi} from "@/components/routeEdit/RouteEditApi.jsx";
-import CustomMap from "@/common/components/map/CustomMap.jsx";
+import CustomMap from "@/common/components/v1/map/CustomMap.jsx";
 
 const Node = ({ points }) => {
     const point = points[0];

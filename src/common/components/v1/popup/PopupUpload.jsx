@@ -3,7 +3,7 @@ import {Fragment, useEffect} from "react";
 import PropTypes from "prop-types";
 
 import {Button} from "@progress/kendo-react-buttons";
-import {FileApi} from "@/common/components/File/FileApi.jsx";
+import {FileApi} from "@/common/components/v1/File/FileApi.jsx";
 
 const DisabledUploadListUI = ({ files, disabled, asnyc, onCancel, onRemove, onRetry, menuId, mappingColumn01Value, mappingColumn02Value }) => {
     const { downloadFileMutation } = FileApi();

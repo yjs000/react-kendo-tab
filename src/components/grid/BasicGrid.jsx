@@ -4,17 +4,17 @@ import { GridColumn as Column } from "@progress/kendo-react-grid";
 import { useYnComboData } from "@/common/utils/CodeUtil.jsx";
 import { useLocation } from "react-router";
 import { OperatorApi } from "@/components/operator/OperatorApi.js";
-import SearchFieldComboBox from "@/common/components/searchField/SearchFieldComboBox.jsx";
-import SearchFieldInput from "@/common/components/searchField/SearchFieldInput.jsx";
-import SearchFieldSearchBtn from "@/common/components/searchField/SearchFieldSearchBtn.jsx";
+import SearchFieldComboBox from "@/common/components/v1/searchField/SearchFieldComboBox.jsx";
+import SearchFieldInput from "@/common/components/v1/searchField/SearchFieldInput.jsx";
+import SearchFieldSearchBtn from "@/common/components/v1/searchField/SearchFieldSearchBtn.jsx";
 import OperatorInsertPopup from "@/components/operator/OperatorInsertPopup.jsx";
 import OperatorDetailPopup from "@/components/operator/OperatorDetailPopup.jsx";
-import DetailButton from "@/common/components/grid/DetailButton.jsx";
-import KendoGrid from "@/common/components/kendo/KendoGrid.jsx";
-import GridData from "@/common/components/grid/GridData.jsx";
+import DetailButton from "@/common/components/v1/grid/DetailButton.jsx";
+import KendoGrid from "@/common/components/v1/kendo/KendoGrid.jsx";
+import GridData from "@/common/components/v1/grid/GridData.jsx";
 import { ComboApi } from "@/components/ComboApi.js";
-import ButtonPrimary from "@/common/components/buttons/ButtonPrimary.jsx";
-import CellDateTime from "@/common/components/grid/CellDateTime.jsx";
+import ButtonPrimary from "@/common/components/v1/buttons/ButtonPrimary.jsx";
+import CellDateTime from "@/common/components/v1/grid/CellDateTime.jsx";
 
 /**
  * 일반 조회.

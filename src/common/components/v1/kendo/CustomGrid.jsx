@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getSelectedState, Grid, GridColumn as Column, GridColumn } from "@progress/kendo-react-grid";
-import CustomGridLoader from "@/common/components/kendo/CustomGridLoader.jsx";
+import CustomGridLoader from "@/common/components/v1/kendo/CustomGridLoader.jsx";
 import { getter } from "@progress/kendo-react-common";
 
 

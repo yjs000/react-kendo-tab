@@ -17,14 +17,14 @@ function App() {
     return (
         <Fragment>
             <Routes>
-                <Route path={"/"} element={<AuthRoute />}>
-                    <Route path={"/"} element={<MainLayout />}>
+                {/*<Route path={"/"} element={<AuthRoute />}>*/}
+                    {/*<Route path={"/"} element={<MainLayout />}>*/}
                         <Route path={"/layout1"} element={<Page1 />}></Route>
                         <Route path={"/layout2"} element={<DefaultFilterGrid />}></Route>
                         <Route path={"/layout3"} element={<SummaryBasicGrid />}></Route>
                         <Route path={"/*"} element={<PageNotFound />} />
-                    </Route>
-                </Route>
+                    {/*</Route>*/}
+                {/*</Route>*/}
                 <Route path={"/login"} element={<Login/>} />
                 <Route path={"/*"} element={<PageNotFound />} />
             </Routes>

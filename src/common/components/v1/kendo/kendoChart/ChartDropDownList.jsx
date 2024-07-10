@@ -1,4 +1,4 @@
-import CustomDropDownList from "@/common/components/kendo/CustomDropDownList.jsx";
+import CustomDropDownList from "@/common/components/v1/kendo/CustomDropDownList.jsx";
 
 /**
  * 차트 내 dropDown

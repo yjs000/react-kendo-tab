@@ -3,7 +3,7 @@ import {useContext} from "react";
 import {useSelector} from "react-redux";
 import {useCookies} from "react-cookie";
 import {persistor} from "@/common/redux/store/StorePersist.jsx";
-import {LoginApi} from "@/common/components/login/LoginApi.js";
+import {LoginApi} from "@/common/components/v1/login/LoginApi.js";
 import Menu from "@/common/components/layout/Menu.jsx";
 import {Navigate} from "react-router";
 
