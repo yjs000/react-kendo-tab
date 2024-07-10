@@ -1,8 +1,9 @@
 import api from "@/common/queries/Api.js";
 
-const callApi = async (endpoint, url, data) => {
+const callApi = async (url, data) => {
     try {
-        const response = await api.post(data, endpoint + url);
+        const response = await api.post(data, url);
+        console.log("res", response)
         return response.data; // API 호출 결과 반환
     } catch (error) {
         throw new Error(error); // 에러 처리

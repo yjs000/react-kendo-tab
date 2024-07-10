@@ -10,7 +10,7 @@ import MainLayout from "@/routes/MainLayout.jsx";
 import DefaultFilterGrid from "@/components/grid/DefaultFilterGrid.jsx";
 import SummaryBasicGrid from "@/components/grid/SummaryBasicGrid.jsx";
 import PageNotFound from "@/components/pageNotFound/PageNotFound.jsx";
-import Page1 from "@/components/Page1.jsx";
+import Page1 from "@/components/layout/page1/Page1.jsx";
 
 function App() {
 
