@@ -12,7 +12,7 @@ import PopupCellPhoneInput from "@/common/components/v1/popup/PopupCellphoneInpu
 import PopupUpload from "@/common/components/v1/popup/PopupUpload.jsx";
 import {Link} from "react-router-dom";
 
-const code = localStorage.getItem("code") == null ? loadCode() : JSON.parse(localStorage.getItem("code"));
+const code = localStorage.getItem("code") == null ? loadCode() : JSON.parse(localStorage.getItem("code")) ?? [];
 const empDiv = code.filter((item) => item.groupCodeId === "EMP_DIV");
 
 const DriverInfoInsertPopup = ({ parentProps, title, ...props }) => {
